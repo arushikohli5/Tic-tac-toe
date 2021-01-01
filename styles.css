@@ -68,9 +68,24 @@ body{
     transform: rotate(-45deg);
 }
 
+.cell.circle::after,
+.cell.circle::before{
+    content: ' ';
+    position: absolute;
+    border-radius: 50%;
+}
 
+.cell.circle::before{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+}
 
-
+.cell.circle::after{
+    width: 56px;
+    height: 56px;
+    background-color: white;
+}
 
 
 
