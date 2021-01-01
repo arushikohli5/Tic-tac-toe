@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <!--------game board-------->
-    <div class="board circle" id="board">
-        <div class="cell x" data-cell></div>
-        <div class="cell circle" data-cell></div>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -22,8 +22,8 @@
     </div>
 
     <!--------winning page-------->
-    <div class="winning-message show">
-        <div data-winning-text-message>X Wins!</div>
+    <div class="winning-message" id="winning-message">
+        <div data-winning-text-message></div>
         <button id="restartbutton">Restart</button>
     </div>
 </body>
