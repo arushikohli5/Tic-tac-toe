@@ -21,6 +21,10 @@ body{
     width: 100px;
     height: 100px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .cell:first-child,
@@ -47,6 +51,22 @@ body{
     border-bottom: none;
 }
 
+.cell.x::after,
+.cell.x::before{
+    content: ' ';
+    position: absolute;
+    background-color: black;
+    width: 13.5px;
+    height: 90px;
+}
+
+.cell.x::before{
+    transform: rotate(45deg);
+}
+
+.cell.x::after{
+    transform: rotate(-45deg);
+}
 
 
 
